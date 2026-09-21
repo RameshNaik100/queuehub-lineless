@@ -1,0 +1,19 @@
+{
+  "name": "queueflow",
+  "version": "1.0.0",
+  "description": "QueueHub — LineLess: Join. Track. Get notified. Show up when it’s your turn. A smart multi-tenant virtual queue for calmer service.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "ws": "^8.21.3"
+  },
+  "private": "true"
+}

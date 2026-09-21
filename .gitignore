@@ -1,0 +1,4 @@
+﻿node_modules/
+queueflow.sqlite-shm
+queueflow.sqlite-wal
+.env
