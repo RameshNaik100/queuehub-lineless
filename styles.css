@@ -180,3 +180,26 @@ button:disabled { cursor: not-allowed; opacity: .48; transform: none !important;
   .panel-head { gap: 10px; align-items: flex-start; }
   .panel-head > .badge { flex-shrink: 0; }
 }
+
+/* Queue operation cards keep information and actions in separate flow rows. */
+.now-serving { display: flex; flex-direction: column; min-height: 0; }
+.now-serving .label, .now-serving .now-token, .now-serving .counter, .now-serving .grace-indicator { position: relative; z-index: 1; }
+.now-serving .action-row { position: relative; left: auto; bottom: auto; margin-top: 18px; width: 100%; align-items: stretch; }
+.now-serving .action-row .btn { min-height: 34px; }
+.now-serving .action-row .btn:last-child { margin-left: auto; }
+.settings-danger-panel { margin-top: 16px; border-color: #ffd8d0; }
+.settings-danger-panel .panel-head { background: #fffaf9; }
+.danger-panel-body { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.danger-panel-body p { margin: 0; color: #7f625d; font-size: 11px; line-height: 1.55; max-width: 700px; }
+.danger-callout { display: flex; gap: 11px; align-items: flex-start; padding: 13px 14px; background: var(--red-soft); border: 1px solid #ffd2c9; color: #994332; border-radius: 9px; font-size: 12px; line-height: 1.45; }
+.danger-callout svg { flex: 0 0 auto; }
+.danger-callout p { margin: 5px 0 0; color: #8c5b51; font-size: 11px; }
+.modal-footer { flex-wrap: wrap; }
+@media (max-width: 580px) {
+  .danger-panel-body { align-items: stretch; flex-direction: column; gap: 13px; }
+  .danger-panel-body .btn { align-self: flex-start; }
+  .now-serving .action-row { margin-top: 16px; }
+  .now-serving .action-row .btn:last-child { margin-left: 0; }
+  .now-serving .action-row .btn { flex: 1 1 44%; }
+  .now-serving .action-row .btn:last-child { flex-basis: 100%; }
+}
